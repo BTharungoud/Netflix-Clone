@@ -1,5 +1,6 @@
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
+import Banner from "./components/Banner/Banner";
 // import logo from './logo.svg';
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
           Netflix Clone App
         </p> */}
         <Navbar/>
+        <Banner/>
         {/* <a
           className="App-link"
           href="https://reactjs.org"
