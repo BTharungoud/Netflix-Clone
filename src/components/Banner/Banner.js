@@ -26,13 +26,14 @@ const Banner = () => {
           backgroundImage: `url(https://image.tmdb.org/t/p/original/${movie?.backdrop_path})`}}>
         <div className="banner__contents">
           <h1 className="banner__title">
-            {movie?.title || movie?.name || movie?.original_name}
+            {movie.name}
           </h1>
+          <div><button className="banner__button">Play</button>
+          <button className="banner__button">My Lists</button></div>
           <p className="banner__description">
             {movie?.overview}
           </p>
-          <button className="banner__button">Play</button>
-          <button className="banner__button">My Lists</button>
+          
         </div>
       </header>
     </div>
